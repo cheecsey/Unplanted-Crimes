@@ -414,8 +414,11 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
 --- !u!1 &1079502799
 =======
 --- !u!1 &649237432
@@ -1326,8 +1329,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad01609dd0f5234d85cef2d7a7a67f1, type: 3}
   m_Name: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
+=======
 >>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScript
   PlayaBody: {fileID: 1491593435}
@@ -1337,7 +1343,10 @@ MonoBehaviour:
 --- !u!61 &1491593438
 BoxCollider2D:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
 =======
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
@@ -1361,6 +1370,9 @@ BoxCollider2D:
 --- !u!222 &1747698052
 CanvasRenderer:
 >>>>>>> jessie
+<<<<<<< HEAD
+>>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
+=======
 >>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1520,11 +1532,17 @@ SceneRoots:
   - {fileID: 40375161}
   - {fileID: 346696433}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 5305873603214245715}
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
   - {fileID: 1079502801}
 =======
   - {fileID: 1213015861}
 >>>>>>> jessie
+<<<<<<< HEAD
+>>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
+=======
 >>>>>>> d841e4dab23032e4ca04a17e1e95aec1a786b7bc
