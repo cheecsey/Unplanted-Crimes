@@ -1,9 +1,13 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
     public Rigidbody2D PlayaBody;
+    public Text SeedMoneyCount;
     public float leftSpeed = 100;
     public float rightSpeed = 100;
     public float JumpSpeed = 100;
@@ -26,7 +30,8 @@ public class PlayerScript : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.E) == true)
         {
-            //Insert Seed digging code later
+            SeedMoneyCount.text = SeedMoneyCount.text + 10;
+            Debug.Log(SeedMoneyCount.text);
         }
         else if (Input.GetKeyDown(KeyCode.Space) == true || Input.GetKeyDown(KeyCode.UpArrow) == true)
         {
