@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e1f3837acf0da1c498ffab33f35d90c6
+guid: 9b3b0988b0ace7f4dabdea80bcb3c519
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2896053923645410666
-    second: 2dbackground_0
+      213: 1970783348735846918
+    second: PetuniaSeedPack_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2dbackground_0
+      name: PetuniaSeedPack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 720
-        height: 360
+        x: 496
+        y: 239
+        width: 919
+        height: 1147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6dc24913b9d03820800000000000000
-      internalID: 2896053923645410666
+      spriteID: 60aa7a69301a95b10800000000000000
+      internalID: 1970783348735846918
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2dbackground_0: 2896053923645410666
+      PetuniaSeedPack_0: 1970783348735846918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
