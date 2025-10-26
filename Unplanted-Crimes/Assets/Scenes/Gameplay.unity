@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 46996155}
   - component: {fileID: 46996158}
   - component: {fileID: 46996159}
+  - component: {fileID: 46996160}
   m_Layer: 0
   m_Name: GameplayCamera
   m_TagString: MainCamera
@@ -441,6 +442,25 @@ MonoBehaviour:
   - {fileID: 241544791}
   Buffer: 0
   playa: {fileID: 1491593436}
+--- !u!114 &46996160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46996154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bcb7c5e534e39c4ea1819a30ff951ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BushSpaning
+  bushes: []
+  bushTemplate: {fileID: 0}
+  bgrd: {fileID: 0}
+  buffer: 0
+  waitingTime: 0
+  timer: 0
+  bushMax: 10
 --- !u!1 &151397537
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,6 +2995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScript
   PlayaBody: {fileID: 1491593435}
+  PlayaSprite: {fileID: 0}
   leftSpeed: 100
   rightSpeed: 100
   JumpSpeed: 100
