@@ -1468,7 +1468,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyCountScript
   moneyCounterText: {fileID: 1228605338}
   seedSprites: []
-  bushSprites: []
 --- !u!4 &682396240
 Transform:
   m_ObjectHideFlags: 0
@@ -2929,7 +2928,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7237115057486444324, guid: 338b2282c24371d45b8f336bf7e7258a, type: 3}
+  m_Sprite: {fileID: 4856247479023562936, guid: 30ee89dd73b07cf4abd52c4d43a4cc01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2977,7 +2976,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1440.9656, y: 431.9483, z: -30}
-  m_LocalScale: {x: 40.530525, y: 41.15135, z: 0.98232}
+  m_LocalScale: {x: 5, y: 5, z: 0.98232}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2996,9 +2995,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScript
   PlayaBody: {fileID: 1491593435}
   PlayaSprite: {fileID: 0}
+  PlayaHitBox: {fileID: 0}
   leftSpeed: 100
   rightSpeed: 100
   JumpSpeed: 100
+  money: {fileID: 0}
 --- !u!61 &1491593438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3037,7 +3038,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.4, y: 6.4}
+    oldSize: {x: 17.16, y: 26.765947}
     newSize: {x: 6.4, y: 6.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3522,7 +3523,7 @@ GameObject:
   - component: {fileID: 2047694696}
   - component: {fileID: 2047694695}
   - component: {fileID: 2047694697}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: CarrotSeed
   m_TagString: Seed
   m_Icon: {fileID: 0}
@@ -3596,7 +3597,7 @@ Transform:
   m_GameObject: {fileID: 2047694694}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1000, y: 30, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

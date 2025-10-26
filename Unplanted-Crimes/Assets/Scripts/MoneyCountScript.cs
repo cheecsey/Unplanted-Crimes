@@ -10,7 +10,7 @@ public class MoneyCountScript : MonoBehaviour
 
     // seeds
     public Sprite[] seedSprites; // sprite array for each seed packet
-    public Sprite[] bushSprites; // sprite array for each bush
+    //public Sprite[] bushSprites; // sprite array for each bush
 
     private bool canCollect = false;
     private GameObject seedInRange;
@@ -33,8 +33,8 @@ public class MoneyCountScript : MonoBehaviour
         {
             AddMoney(); // add 10 to money count
             Destroy(seedInRange); // removes the seed packet
-            //canCollect = false;
-            //seedInRange = null;
+            canCollect = false;
+            seedInRange = null;
         }
     }
 
@@ -42,7 +42,7 @@ public class MoneyCountScript : MonoBehaviour
     {
         moneyCounterText.text = moneyCounter.ToString(); // int to string
 
-        if (moneyCounter >= 500)
+        if (moneyCounter >= 10)
         {
             SceneManager.LoadScene("EndGame"); // game over
         }
