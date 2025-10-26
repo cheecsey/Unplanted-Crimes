@@ -9,7 +9,8 @@ public class MoneyCountScript : MonoBehaviour
     private int moneyCounter;
 
     // seeds
-    public Sprite[] moneySprites; // sprite array for each seed packet
+    public Sprite[] seedSprites; // sprite array for each seed packet
+    public Sprite[] bushSprites; // sprite array for each bush
 
     private bool canCollect = false;
     private GameObject seedInRange;
