@@ -29,12 +29,12 @@ public class MoneyCountScript : MonoBehaviour
             moneyCounter = 0; // sets the players money back to 0
             UpdateMoneyCountUI();
         }
-        if (canCollect && Input.GetKeyDown(KeyCode.E) && seedInRange != null)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             AddMoney(); // add 10 to money count
             Destroy(seedInRange); // removes the seed packet
-            canCollect = false;
-            seedInRange = null;
+            //canCollect = false;
+            //seedInRange = null;
         }
     }
 
