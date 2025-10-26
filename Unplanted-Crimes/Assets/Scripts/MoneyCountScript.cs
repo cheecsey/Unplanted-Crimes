@@ -8,6 +8,12 @@ public class MoneyCountScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI moneyCounterText; // text box to display amount of money player has
     private int moneyCounter;
 
+    // seeds
+    public Sprite[] moneySprites; // sprite array for each seed packet
+
+    private bool canCollect = false;
+    private GameObject seedInRange;
+
     void Start()
     {
         moneyCounter = 0; // auto set money to 0 at start of game
@@ -22,10 +28,12 @@ public class MoneyCountScript : MonoBehaviour
             moneyCounter = 0; // sets the players money back to 0
             UpdateMoneyCountUI();
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (canCollect && Input.GetKeyDown(KeyCode.E) && seedInRange != null)
         {
-            moneyCounter = moneyCounter + 10;
-            UpdateMoneyCountUI();
+            AddMoney(); // add 10 to money count
+            Destroy(seedInRange); // removes the seed packet
+            canCollect = false;
+            seedInRange = null;
         }
     }
 
@@ -41,7 +49,17 @@ public class MoneyCountScript : MonoBehaviour
 
     private void AddMoney()
     {
-        moneyCounter = moneyCounter + 10;
+        moneyCounter = moneyCounter + 10; // adds 10 to money for every seed (500 to win)
+        UpdateMoneyCountUI();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Seed")) // only interract with seeds
+        {
+            canCollect = true;
+            seedInRange = collision.gameObject;
+        }
     }
 
     public void BackToMenu()
