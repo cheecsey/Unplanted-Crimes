@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MoneyCountScript : MonoBehaviour
 {
@@ -31,10 +32,26 @@ public class MoneyCountScript : MonoBehaviour
     private void UpdateMoneyCountUI()
     {
         moneyCounterText.text = moneyCounter.ToString(); // int to string
+
+        if (moneyCounter >= 500)
+        {
+            SceneManager.LoadScene("EndGame"); // game over
+        }
     }
 
     private void AddMoney()
     {
         moneyCounter = moneyCounter + 10;
     }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void EndGame()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
+
 }
